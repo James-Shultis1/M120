@@ -58,8 +58,9 @@ session_start();
               <div class="bookCont" id="b<<?php echo $idNum; ?>">
                 <h1><?php echo $row["kurztitle"]?></h1><br>
                 <span>Author: <?php echo $row["autor"]?></span>
-                <!--<p><?php echo $row["Title"]?></p>
-                <p><?php echo $row["Title"]?></p>-->
+                <span><?php echo $row["Title"]?></span>
+                <span><?php echo $row["Title"]?></span>
+                <span><?php echo $row["Title"]?></span>
               </div>
                 <?php
                 $idNum++;
