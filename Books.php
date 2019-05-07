@@ -85,6 +85,7 @@ session_start();
     // left the old comments in there, so when we say "I" that's Marcelo exlaining it.
     // Source: https://www.myprogrammingtutorials.com/create-pagination-with-php-and-mysql.html
 
+    include "connection.php";
             // First we check if the Page Number is known to us, which in the beginning it will obviously not be, so in case we don't know it, we'll just give it
             // the value 1.
             if (isset($_GET['PageNr']))
