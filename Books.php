@@ -58,7 +58,7 @@ session_start();
               <div class="bookCont" id="b<<?php echo $idNum; ?>">
 
               </div>
-
+              <p> This is just a Test</p>
                 <?php
                 $idNum++;
             } ?>
