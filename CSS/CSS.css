@@ -1,0 +1,12 @@
+div#Menu
+{
+  position: fixed;
+  right: 70px;
+  text-align: center;
+}
+
+div.MenuContent
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
