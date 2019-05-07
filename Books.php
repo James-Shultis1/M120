@@ -11,7 +11,8 @@ session_start();
   </head>
   <body>
     <?php include "Header.php";
-    // include "Menu.php"; ?>
+    include "Menu.php";
+    include "Footer.php"; ?>
     <div class="books">
 
     <?php
@@ -107,11 +108,5 @@ session_start();
             <!-- This is the same as with the menu covering up the title, but here it's the pagination covering the news article, so a little space is needed. -->
         <br><br><br>
 
-        </body>
-    </html>
-
-
-    <br>
-    <?php include "Footer.php"; ?>
   </body>
 </html>

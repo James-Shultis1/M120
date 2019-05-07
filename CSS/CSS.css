@@ -21,10 +21,13 @@ div.MenuContent
 }
 .footer{
   bottom: 0;
+  height: 3vh;
+  opacity: 0.5;
   margin-bottom: 0px;
   width: 100vw;
   text-align: center;
   position: fixed;
+  background: blue;
 }
 .header{
   top: 0;
