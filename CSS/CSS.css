@@ -43,13 +43,13 @@ div.MenuContent
   margin-top: 9vw;
   float: left;
 }
-.bookCont spann{
-  font-size: 2vw;
+.bookCont span{
+  font-size: 1vw;
   margin-left: 1vw;
 }
 .bookCont h1{
   text-align: center;
-  font-size: 3vw;
+  font-size: 2vw;
 
 }
 .books{
