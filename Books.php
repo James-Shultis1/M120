@@ -57,10 +57,10 @@ session_start();
 
               <div class="bookCont" id="b<<?php echo $idNum; ?>">
                 <h1><?php echo $row["kurztitle"]?></h1><br>
-                <span>Author: <?php echo $row["autor"]?></span>
+                <span>Author: <?php if (isset($row["autor"]) && strlen(trim($row["autor"]))) {echo $row["autor"];}else{echo "Unknown";} ?></span>
+                <!--<span><?php echo $row["Title"]?></span>
                 <span><?php echo $row["Title"]?></span>
-                <span><?php echo $row["Title"]?></span>
-                <span><?php echo $row["Title"]?></span>
+                <span><?php echo $row["Title"]?></span>-->
               </div>
                 <?php
                 $idNum++;
