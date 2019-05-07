@@ -26,7 +26,7 @@ div.MenuContent
 }
 .header{
   top: 0;
-  height: 5%;
+  height: 7.6vw;
   background-color: green;
   margin-bottom: 0px;
   width: 100%;
@@ -40,4 +40,137 @@ div.MenuContent
   margin-left: 10vw;
   margin-top: 9vw;
   float: left;
+}
+.books{
+  padding-top: 2vw;
+}
+/*-------------------------------------Nav-----------------------------------------------------------------------------------------------------*/
+
+nav{
+    position: fixed;
+}
+a:hover , a{
+	color: black;
+	text-decoration: none;
+}
+a:active{
+	color: pink;
+}
+
+#menuToggle{
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+/*This is for the Buttons, I defined their shared attributes in a class then the indiviual ones, for effeiciency*/
+.button{
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    opacity: 0; /* this hides it*/
+    z-index: 1; /*so its ontop of the hamburger*/
+
+    -webkit-touch-callout: none;
+}
+#CHBX1{
+    left: -5px;
+    z-index: 2;
+}
+#CHBX2{
+    left: 9vw;
+    z-index: 2;
+}
+
+
+/*
+* this defines the Icon (Hamburger)
+*/
+
+#menuToggle span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #d84d23; /*this makes the background a special color, making it look like bars*/
+    border-radius: 3px;
+
+    z-index: 1; /*below the accual button*/
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+}
+
+#menuToggle span:first-child{
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2){
+    transform-origin: 0% 100%;
+}
+/*basically this matches every span that is a sibling of input:checked and comes after it*/
+
+#menuToggle input:checked ~ span{
+    opacity: 1; /* makes it visisble*/
+    transform: translate(10vw, 0) rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+/* now this hides the middle one*/
+#menuToggle input:checked ~ span:nth-last-child(3){
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+/* transform works in a linear process 1.thing() 2.thing(), ...
+so if rotate comes before trnaslate itll rotate, then move in that direction*/
+#menuToggle input:checked ~ span:nth-last-child(2){
+    transform: translate(10vw, 0) rotate(-45deg) translate(0, -1px);
+}
+
+#menu{
+    position: absolute;
+	min-width: fit-content;
+    width: 10vw;
+    height: 100vh;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    text-align: left;
+
+    background: #E4F5FF;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li{
+    padding: 10px 0;
+    font-size: 22px;
+}
+.submenu{
+    list-style-type: none;
+}
+
+
+/*this makes it slide */
+
+#menuToggle input:checked ~ ul{
+    transform: none;
 }
