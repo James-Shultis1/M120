@@ -13,10 +13,10 @@
     <div class="books">
     <div class="bookCont" id="b1">
       <h1>Name </h1>
-      <spann>Author: </spann><br>
-      <spann>Genre: </spann><br>
-      <spann>Pages: </spann><br>
-      <spann>Release Date: </spann><br>
+      <span>Author: </span><br>
+      <span>Genre: </span><br>
+      <span>Pages: </span><br>
+      <span>Release Date: </span><br>
 
     </div>
     <div class="bookCont" id="b2">
