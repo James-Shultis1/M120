@@ -5,7 +5,9 @@
     <title></title>
   </head>
   <body>
-    This is the Header
+    <div class="header">
+      This is the Header
+    </div>
 
     <br>
   </body>

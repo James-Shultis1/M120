@@ -10,3 +10,6 @@ div.MenuContent
   padding-top: 10px;
   padding-bottom: 10px;
 }
+div.footer{
+  bottom: 0px;
+}

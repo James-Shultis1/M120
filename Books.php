@@ -73,6 +73,7 @@
 
     </div>
 
-    <br> <?php include "Footer.php"; ?>
+    <br>
+    <?php include "Footer.php"; ?>
   </body>
 </html>

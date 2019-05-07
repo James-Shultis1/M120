@@ -5,6 +5,8 @@
     <title></title>
   </head>
   <body>
-    This is the Footer
+    <div class="footer">
+      This is the Footer
+    </div>
   </body>
 </html>
