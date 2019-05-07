@@ -105,7 +105,7 @@ session_start();
 
             // So here we want to know the amount of articles in order to save it into a variable totalrow.
             $sql = "SELECT COUNT(*) FROM buecher";
-            $result = mysqli_query($connection, $sql);
+            $result = mysqli_query($conn, $sql);
             $TotalRows = mysqli_fetch_array($result)[0];
             // To find out how many pages we need we calculate the total amount of rows devided by the amount of articles per page, simple. However
             // this can end up in fractions of numbers, so to prevent that, we use ceil() which rounds up those fractions.
@@ -113,7 +113,7 @@ session_start();
 
             // Here we finally put the use of offset into practice. The mysqli query is used to fetch the results.
             $sql = "SELECT * FROM buecher LIMIT $Offset, $ArticlesPerPage";
-            $result = mysqli_query($connection,$sql);
+            $result = mysqli_query($conn,$sql);
             while($row = mysqli_fetch_array($result))
             {// Nice and tidy like they are in the Home Page, the same way.?>
 
@@ -158,7 +158,7 @@ session_start();
 
             <?php
             // Connection is no longer needed so we obviously close it.
-            $connection->close();
+            $conn->close();
             ?>
 
             <!-- This is the same as with the menu covering up the title, but here it's the pagination covering the news article, so a little space is needed. -->
