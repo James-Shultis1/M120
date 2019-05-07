@@ -10,9 +10,7 @@
     include "Menu.php"; ?>
 
     Content
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br>
-    y
+
 
     <br> <?php include "Footer.php"; ?>
   </body>

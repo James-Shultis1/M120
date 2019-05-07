@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <div class="header">
-      This is the Header
-    </div>
-
-    <br>
-  </body>
-</html>
+<?php echo '<div class="header">
+  This is the Header
+</div>' ?>
