@@ -5,6 +5,8 @@ div#Menu
   text-align: center;
 }
 body{
+
+  font-family: 'Noto Sans', sans-serif;
   overflow-x: hidden; //horizontal
   overflow-y: scroll; //vertical
   width: 100%;
@@ -40,6 +42,15 @@ div.MenuContent
   margin-left: 10vw;
   margin-top: 9vw;
   float: left;
+}
+.bookCont spann{
+  font-size: 2vw;
+  margin-left: 1vw;
+}
+.bookCont h1{
+  text-align: center;
+  font-size: 3vw;
+
 }
 .books{
   padding-top: 2vw;
@@ -142,13 +153,15 @@ so if rotate comes before trnaslate itll rotate, then move in that direction*/
 
 #menu{
     position: absolute;
-	min-width: fit-content;
-    width: 10vw;
+	min-width: 5vw;
+    max-width: 10vw;
+    width: fit-content;
     height: 100vh;
     margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
     text-align: left;
+    overflow: hidden;
 
     background: #E4F5FF;
     list-style-type: none;

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Hottest Books!</title>
     <link rel="stylesheet" href="CSS/CSS.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
   </head>
   <body>
     <?php include "Header.php";
@@ -11,6 +12,11 @@
 
     <div class="books">
     <div class="bookCont" id="b1">
+      <h1>Name </h1>
+      <spann>Author: </spann><br>
+      <spann>Genre: </spann><br>
+      <spann>Pages: </spann><br>
+      <spann>Release Date: </spann><br>
 
     </div>
     <div class="bookCont" id="b2">
