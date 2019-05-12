@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-16">
     <title>Hottest Books!</title>
     <link rel="stylesheet" href="CSS/CSS.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
