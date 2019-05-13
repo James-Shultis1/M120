@@ -55,7 +55,7 @@ charset=iso-8859-1">
       $ArticlesPerPage = 21;
       $Offset = $Pagey->GetOffset($PageNr, $ArticlesPerPage);
       $TotalPages = $Pagey->DoLazyMaths($PageNr, $conn, $ArticlesPerPage, $where, $search);
-      $Pagey->GetRelics($Offset, $ArticlesPerPage, $conn, $where, $search);
+      $Pagey->GetRelics($Offset, $ArticlesPerPage, $conn, $where, $search, $order);
       ?> </div> <?php
       $Pagey->EnlightPages($PageNr, $TotalPages);
 
