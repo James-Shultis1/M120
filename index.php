@@ -17,6 +17,7 @@ $_SESSION["CurPage"] = "index.php";
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
   </head>
   <body>
+    <br><br>
     <?php include "Header.php";
   include "Menu.php";
   include "connection.php";
