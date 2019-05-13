@@ -22,7 +22,7 @@ charset=iso-8859-1">
     <div class="books">
 
     <?php include "Pagenation.php" ?>
-            </div>
+            
 
             <?php
             // Connection is no longer needed so we obviously close it.
