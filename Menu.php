@@ -41,7 +41,12 @@
               <input type="text" name="searchfield" value="" placeholder="Search">
               <br>
               <select class="filter" name="filter">
-                <option value="All">All</option>
+                <option value="autor">Author</option>
+                <option value="title">Title</option>
+                <option value="id">ID</option>
+
+              </select>
+              Order by: <select class="order" name="order">
                 <option value="autor">Author</option>
                 <option value="title">Title</option>
                 <option value="id">ID</option>

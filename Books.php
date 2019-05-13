@@ -31,9 +31,26 @@ charset=iso-8859-1">
       }
       else
       {
-        $where = "All";
+        $where = "autor";
       }
-      $search = "%"."ap"."%";
+
+      if (isset($_POST["searchfield"]))
+      {
+        $search = $_POST["searchfield"];
+      }
+      else
+      {
+        $search = "";
+      }
+
+      if (isset($_POST["order"]))
+      {
+        $order = $_POST["order"];
+      }
+      else
+      {
+        $order = "title";
+      }
 
       $ArticlesPerPage = 21;
       $Offset = $Pagey->GetOffset($PageNr, $ArticlesPerPage);
