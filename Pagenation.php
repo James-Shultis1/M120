@@ -32,11 +32,11 @@ class Pagination {
     return $TotalPages;
   }
 
-  public function GetRelics($Offset, $ArticlesPerPage, $conn, $where, $search)
+  public function GetRelics($Offset, $ArticlesPerPage, $conn, $where, $search, $order)
   {
     include "Search.php";
     $Hunter = new Search();
-    $sql = $Hunter->GetSelectSQL($where, $search);
+    $sql = $Hunter->GetSelectSQL($where, $search, $order);
     $Hunter->SearchDB($sql, $conn);
   }
 
