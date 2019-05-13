@@ -7,6 +7,7 @@ div#Menu
 body{
   background-color: rgba(188, 119, 104, 0.2);
   font-family: 'Noto Sans', sans-serif;
+
   overflow-x: visible;
   width: 100%;
   max-width: 100vw;
@@ -174,6 +175,8 @@ so if rotate comes before trnaslate itll rotate, then move in that direction*/
 }
 
 #menu{
+  font-weight: bold;
+  text-shadow: 1px 1px red;
     position: absolute;
     min-width: 5vw;
     max-width: 10vw;
@@ -204,8 +207,8 @@ so if rotate comes before trnaslate itll rotate, then move in that direction*/
   background: url("../rsc/books.jpg") 0 0 repeat;
   background-repeat:repeat;
 
-  background-position: center;
-  background-size: contain;
+  background-position: left;
+  background-size: 70%;
   -webkit-transform: rotate(5deg);
   transform: rotate(5deg);
 }
@@ -256,13 +259,14 @@ background-image: "Search.jpg";
 
 /*------------Details---------------------*/
 .Details{
-    top: 10vw;
+    top: 7vw;
    position: absolute;
    left: 50%;
    /* bring your own prefixes */
    transform: translate(-50%);
    width: 80vw;
    z-index: -1;
+   background: rgba(188, 119, 104, .9);
 }
 .Details h1{
   position: absolute;
