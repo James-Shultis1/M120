@@ -21,6 +21,7 @@ class Pagination {
   public function GetOffset($PageNr, $ArticlesPerPage)
   {
     $Offset = ($PageNr-1) * $ArticlesPerPage;
+    return $Offset;
   }
 
   public function DoLazyMaths($PageNr, $conn, $ArticlesPerPage, $where, $search)
@@ -36,7 +37,8 @@ class Pagination {
   {
     include "Search.php";
     $Hunter = new Search();
-    $sql = $Hunter->GetSelectSQL($where, $search, $order);
+    $sql = $Hunter->GetSelectOffsetSQL($where, $search, $order, $Offset, $ArticlesPerPage);
+    echo $sql;
     $Hunter->SearchDB($sql, $conn);
   }
 

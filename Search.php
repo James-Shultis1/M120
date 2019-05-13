@@ -44,10 +44,18 @@ class Search {
     }
   }
 
-  public function GetSelectOffsetSQL($where, $search, $Offset, $ArticlesPerPage)
+  public function GetSelectOffsetSQL($where, $search, $order, $Offset, $ArticlesPerPage)
   {
-    $sql = "SELECT * FROM buecher WHERE ".$where." LIKE '".$search."'"." LIMIT $Offset, $ArticlesPerPage;";
-    return $sql;
+    if ($search == "")
+    {
+      $sql = "SELECT * FROM buecher ORDER BY $order LIMIT $Offset, $ArticlesPerPage;";
+      return $sql;
+    }
+    else
+    {
+      $sql = "SELECT * FROM buecher WHERE ".$where." LIKE '".$search."' ORDER BY $order LIMIT $Offset, $ArticlesPerPage;";
+      return $sql;
+    }
   }
 }
 
