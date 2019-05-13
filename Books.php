@@ -16,15 +16,20 @@ charset=iso-8859-1">
     <link rel="stylesheet" href="CSS/CSS.css">
   </head>
   <body>
-    <?php include "Header.php";
+    <?php
+    include "Header.php";
+    include "connection.php";
     include "Menu.php";
     include "Footer.php"; ?>
     <div class="books">
+      <?php include "Pagenation.php";
+      $Pagey = new Pagination();
+      $ArticlesPerPage = 21;
+      $Offset = $Pagey->GetOffset($PageNr, $ArticlesPerPage);
+      $TotalPages = $Pagey->DoLazyMaths($PageNr, $conn, $ArticlesPerPage);
+      $Pagey->GetReliqs($Offset, $ArticlesPerPage, $conn)
+      ?> </div> <?php
 
-    <?php include "Pagenation.php" ?>
-            
-
-            <?php
             // Connection is no longer needed so we obviously close it.
             $conn->close();
             ?>

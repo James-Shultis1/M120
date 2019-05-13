@@ -1,4 +1,15 @@
 <?php
+
+// Necessary startup code to prevent empty index error
+if (isset($_GET["PageNr"]))
+{
+  $PageNr = $_GET["PageNr"];
+}
+else
+{
+  $PageNr = 1;
+}
+
 class Search {
 
   // A search function to search according to the sql statement given
@@ -18,7 +29,7 @@ class Search {
                 <span><?php echo $row["Title"]?></span>
                 <span><?php echo $row["Title"]?></span>-->
               </div>
-              <?php
+              <?php $idNum++;
             }
         }
     }
@@ -30,7 +41,7 @@ class Search {
 
   public function GetSelectSQL($where, $search)
   {
-    $sql = "SELECT * FROM buecher WHERE '".$where."' LIKE '".$search."'"/*.if ($_SESSION["CurPage"] == "Books.php") { echo " LIMIT $Offset, $ArticlesPerPage";} else { echo "";}*/.";";
+    $sql = "SELECT * FROM buecher WHERE ".$where." LIKE '".$search."'"/*.if ($_SESSION["CurPage"] == "Books.php") { echo " LIMIT $Offset, $ArticlesPerPage";} else { echo "";}*/.";";
     return $sql;
   }
 }
