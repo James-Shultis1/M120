@@ -17,7 +17,7 @@ $_SESSION["CurPage"] = "index.php";
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
   </head>
   <body>
-    <br><br>
+    <br><br><br><br>
     <?php include "Header.php";
   include "Menu.php";
   include "connection.php";
@@ -26,7 +26,7 @@ $_SESSION["CurPage"] = "index.php";
   $Hunter = new Search();
 
   $where = "autor";
-  $search = "apian";
+  $search = "%"."p"."%";
   $sql = $Hunter->GetSelectSQL($where, $search);
   echo $sql; ?>
 
