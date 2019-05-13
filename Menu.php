@@ -37,7 +37,7 @@
 
         <ul id="menu">
           <div class="Search">
-            <form class="Search" action="Search.php" method="post">
+            <form class="Search" action="<?php echo $_SESSION["CurPage"]; ?>" method="post">
               <input type="text" name="searchfield" value="" placeholder="Search">
               <br>
               <select class="filter" name="filter">
