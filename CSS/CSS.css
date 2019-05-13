@@ -202,6 +202,50 @@ position: fixed;}
 .Sub{
 background-image: "Search.jpg";
 }
+.BigSearch{
+  overflow:visible;
+  top: 10vw;
+ position: fixed;
+ left: 50%;
+ /* bring your own prefixes */
+ transform: translate(-50%);
+
+}
+.BigSearch input{
+  height: 5vw;
+  width: 15vw;
+}
+.BigSearch .filter{
+  height: 5vw;
+  width: 15vw;
+}
+.Details{
+    top: 10vw;
+   position: fixed;
+   left: 50%;
+   /* bring your own prefixes */
+   transform: translate(-50%);
+   height: fit-content;
+   width: 80vw;
+}
+.Details h1{
+  position: absolute;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%);
+
+}
+.Details .details{
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-465%,100%);
+  float: right;
+}
+#BigBook{
+  top: 1vw;
+  position:relative;
+  height: 40vw;
+}
 
 /* ------------------------------------------- Pagination System ----------------------------------------------------------------*/
 

@@ -48,9 +48,10 @@
               </select>
               <br>
               <input class="Sub" type="submit" name="Submit" value="submit">
+              </form>
             </div>
 
-            </form>
+
             <a href="Index.php"> <li> Hot </li></a> <br>
             <a href="Books.php"> <li>Archive</li> </a>
 

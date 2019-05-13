@@ -40,9 +40,17 @@ include "connection.php";
         while($row = mysqli_fetch_array($result))
         {// Nice and tidy like they are in the Home Page, the same way.?>
 
-          <div class="bookCont" id="b<<?php echo $idNum; ?>">
+          <div class="bookCont" id="b<?php echo $idNum; ?>">
             <h1><?php echo $row["kurztitle"]?></h1><br>
-            <span>Author: <?php if (isset($row["autor"]) && strlen(trim($row["autor"]))) {echo $row["autor"];}else{echo "Unknown";} ?></span>
+            <span>Author: <?php
+            if (isset($row["autor"]) && strlen(trim($row["autor"])))
+            {
+              echo $row["autor"];
+            }else{
+              echo "Unknown";
+            } ?>
+          </span>
+          <span><a href="Details.php?ID=<?php echo $row["id"] ?>"> Here</a> </span>
             <!--<span><?php echo $row["Title"]?></span>
             <span><?php echo $row["Title"]?></span>
             <span><?php echo $row["Title"]?></span>-->
