@@ -20,7 +20,12 @@ include "connection.php";
 
 
         // Here we finally put the use of offset into practice. The mysqli query is used to fetch the results.
-        $sql = "SELECT buecher.*, kategorien.kategorie as genre FROM buecher, kategorien WHERE buecher.id = $PageNr AND buecher.kategorie = kategorien.id";
+        $sql = "SELECT buecher.*, kategorien.kategorie
+        as genre
+        FROM buecher, kategorien
+        WHERE buecher.id = $PageNr
+        AND buecher.kategorie = kategorien.id";
+
         $result = mysqli_query($conn,$sql);
         $idNum = 0;
         if ($row = mysqli_fetch_array($result)) {
@@ -31,7 +36,6 @@ include "connection.php";
                 <br>
                 <span>'.$row["autor"].'</span><br>
                 <span>'.$row["genre"].'</span><br>
-                <span>Release Date</span><br>
 
                 <span> ID: '.$row["id"].'</span>
 
