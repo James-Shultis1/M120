@@ -156,7 +156,7 @@ so if rotate comes before trnaslate itll rotate, then move in that direction*/
 
 #menu{
     position: absolute;
-	min-width: 5vw;
+    min-width: 5vw;
     max-width: 10vw;
     width: fit-content;
     height: 100vh;

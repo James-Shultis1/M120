@@ -36,13 +36,14 @@
         -->
 
         <ul id="menu">
-            <a href="#top"> <li>Welcome</li> </a>
-            <a href="Books.php"> <li>Archive</li> </a>
-            <a href="Index.php"> <li> Hot</a>
-            <?php if($_SESSION["admin"] == true && $_SESSION["Logged_In"] == true){
-                echo "<a href="."admin.php"."> <li>Create</li> </a>";
-            }
-            ?>
+          <a href="Index.php"> <li> Hot</a><br>
+          <a href="Books.php"> <li>Archive</li> </a>
+
+          <?php
+          if($_SESSION["admin"] == true && $_SESSION["Logged_In"] == true)
+          {
+            echo "<a href="."admin.php"."> <li>Create</li> </a>";
+          } ?>
 
     <div id="SocialMedia">
     <?php
