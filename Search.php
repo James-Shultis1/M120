@@ -32,8 +32,15 @@ class Search {
 
   public function GetSelectSQL($where, $search)
   {
-    $sql = "SELECT * FROM buecher WHERE ".$where." LIKE '".$search."';";
-    return $sql;
+    if ($where != "all")
+    {
+      $sql = "SELECT * FROM buecher WHERE ".$where." LIKE '".$search."';";
+      return $sql;
+    }
+    else
+    {
+      $sql = "SELECT * FROM buecher WHERE ".$where." LIKE '".$search."';";
+    }
   }
 
   public function GetSelectOffsetSQL($where, $search, $Offset, $ArticlesPerPage)

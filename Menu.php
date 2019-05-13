@@ -41,9 +41,10 @@
               <input type="text" name="searchfield" value="" placeholder="Search">
               <br>
               <select class="filter" name="filter">
-                <option value="Author">Author</option>
-                <option value="Title">Title</option>
-                <option value="ID">ID</option>
+                <option value="1">All</option>
+                <option value="autor">Author</option>
+                <option value="title">Title</option>
+                <option value="id">ID</option>
 
               </select>
               <br>
