@@ -52,7 +52,7 @@
             </div>
 
 
-            <a href="Index.php"> <li> Hot </li></a> <br>
+            <a href="index.php"> <li> Hot </li></a> <br>
             <a href="Books.php"> <li>Archive</li> </a>
 
             <?php if($_SESSION["admin"] == true && $_SESSION["Logged_In"] == true){

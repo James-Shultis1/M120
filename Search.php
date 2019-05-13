@@ -27,6 +27,12 @@ class Search {
         echo "Sorry, we found no books that match your criteria.";
     }
   }
+
+  public function GetSelectSQL($where, $search)
+  {
+    $sql = "SELECT * FROM buecher WHERE ".$where." LIKE ".$search/*.if ($_SESSION["CurPage"] == "Books.php") { echo " LIMIT $Offset, $ArticlesPerPage";} else { echo "";}*/.";";
+    return $sql;
+  }
 }
 
 
