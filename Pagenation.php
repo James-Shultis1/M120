@@ -6,6 +6,16 @@
 // Source: https://www.myprogrammingtutorials.com/create-pagination-with-php-and-mysql.html
 // Update: Code is getting a full rework to be object oriented
 
+// Necessary startup code to prevent empty index error
+if (isset($_GET["PageNr"]))
+{
+  $PageNr = $_GET["PageNr"];
+}
+else
+{
+  $PageNr = 1;
+}
+
 class Pagination {
 
   public function GetOffset($PageNr, $ArticlesPerPage)
@@ -22,7 +32,7 @@ class Pagination {
     return $TotalPages;
   }
 
-  public function GetReliqs($Offset, $ArticlesPerPage, $conn)
+  public function GetRelics($Offset, $ArticlesPerPage, $conn)
   {
     $sql = "SELECT * FROM buecher LIMIT $Offset, $ArticlesPerPage";
     include "Search.php";

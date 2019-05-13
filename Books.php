@@ -27,7 +27,7 @@ charset=iso-8859-1">
       $ArticlesPerPage = 21;
       $Offset = $Pagey->GetOffset($PageNr, $ArticlesPerPage);
       $TotalPages = $Pagey->DoLazyMaths($PageNr, $conn, $ArticlesPerPage);
-      $Pagey->GetReliqs($Offset, $ArticlesPerPage, $conn)
+      $Pagey->GetRelics($Offset, $ArticlesPerPage, $conn)
       ?> </div> <?php
 
             // Connection is no longer needed so we obviously close it.

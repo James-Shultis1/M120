@@ -1,15 +1,5 @@
 <?php
 
-// Necessary startup code to prevent empty index error
-if (isset($_GET["PageNr"]))
-{
-  $PageNr = $_GET["PageNr"];
-}
-else
-{
-  $PageNr = 1;
-}
-
 class Search {
 
   // A search function to search according to the sql statement given
@@ -19,6 +9,7 @@ class Search {
     $result = mysqli_query($connection, $sql);
     if (mysqli_num_rows($result) > 0)
     {
+      $idNum = 0;
         while($row = mysqli_fetch_assoc($result))
         {
             { ?>
