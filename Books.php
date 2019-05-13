@@ -25,7 +25,14 @@ charset=iso-8859-1">
       <?php include "Pagenation.php";
       $Pagey = new Pagination();
 
-      $where = "autor";
+      if (isset($_POST["filter"]))
+      {
+        $where = $_POST["filter"];
+      }
+      else
+      {
+        $where = "All";
+      }
       $search = "%"."ap"."%";
 
       $ArticlesPerPage = 21;

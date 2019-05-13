@@ -32,14 +32,22 @@ class Search {
 
   public function GetSelectSQL($where, $search)
   {
-    if ($where != "all")
+    if ($search == "")
     {
-      $sql = "SELECT * FROM buecher WHERE ".$where." LIKE '".$search."';";
-      return $sql;
+      $sql = "SELECT * FROM buecher;";
     }
     else
     {
-      $sql = "SELECT * FROM buecher WHERE ".$where." LIKE '".$search."';";
+      if ($where != "All")
+      {
+        $sql = "SELECT * FROM buecher WHERE ".$where." LIKE '".$search."';";
+        return $sql;
+      }
+      else
+      {
+        $sql = "SELECT * FROM buecher WHERE id LIKE '".$search."' OR katalog LIKE '".$search."' OR nummer LIKE '".$search."' OR autor LIKE '".$search."' OR title LIKE '".$search."' OR sprache LIKE '".$search."';";
+        return $sql;
+      }
     }
   }
 
