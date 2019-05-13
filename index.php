@@ -8,33 +8,14 @@
   </head>
   <body>
     <?php include "Header.php";
-  include "Menu.php"; ?>
+  include "Menu.php";
+  include "Search.php";
+
+  $Hunter = new Search(); ?>
 
     <div class="books">
-    <div class="bookCont" id="b1">
-      <h1>Name </h1>
-      <span>Author: </span><br>
-      <span>Genre: </span><br>
-      <span>Pages: </span><br>
-      <span>Release Date: </span><br>
-
+      <?php $Hunter->Search($sql, $conn); ?>
     </div>
-    <div class="bookCont" id="b2">
-
-    </div>
-    <div class="bookCont" id="b3">
-
-    </div>
-    <div class="bookCont" id="b4">
-
-    </div>
-    <div class="bookCont" id="b5">
-
-    </div>
-    <div class="bookCont" id="b6">
-
-    </div>
-  </div>
 
 
     <br> <?php include "Footer.php"; ?>

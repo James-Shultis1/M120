@@ -40,6 +40,12 @@
           <a href="Books.php"> <li>Archive</li> </a>
 
           <?php
+          include "connection.php";
+
+          
+           ?>
+
+          <?php
           if($_SESSION["admin"] == true && $_SESSION["Logged_In"] == true)
           {
             echo "<a href="."admin.php"."> <li>Create</li> </a>";
