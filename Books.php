@@ -24,11 +24,16 @@ charset=iso-8859-1">
     <div class="books">
       <?php include "Pagenation.php";
       $Pagey = new Pagination();
+
+      $where = "autor";
+      $search = "%"."ap"."%";
+
       $ArticlesPerPage = 21;
       $Offset = $Pagey->GetOffset($PageNr, $ArticlesPerPage);
-      $TotalPages = $Pagey->DoLazyMaths($PageNr, $conn, $ArticlesPerPage);
-      $Pagey->GetRelics($Offset, $ArticlesPerPage, $conn)
+      $TotalPages = $Pagey->DoLazyMaths($PageNr, $conn, $ArticlesPerPage, $where, $search);
+      $Pagey->GetRelics($Offset, $ArticlesPerPage, $conn, $where, $search);
       ?> </div> <?php
+      $Pagey->EnlightPages($PageNr, $TotalPages);
 
             // Connection is no longer needed so we obviously close it.
             $conn->close();

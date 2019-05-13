@@ -32,7 +32,13 @@ class Search {
 
   public function GetSelectSQL($where, $search)
   {
-    $sql = "SELECT * FROM buecher WHERE ".$where." LIKE '".$search."'"/*.if ($_SESSION["CurPage"] == "Books.php") { echo " LIMIT $Offset, $ArticlesPerPage";} else { echo "";}*/.";";
+    $sql = "SELECT * FROM buecher WHERE ".$where." LIKE '".$search."';";
+    return $sql;
+  }
+
+  public function GetSelectOffsetSQL($where, $search, $Offset, $ArticlesPerPage)
+  {
+    $sql = "SELECT * FROM buecher WHERE ".$where." LIKE '".$search."'"." LIMIT $Offset, $ArticlesPerPage;";
     return $sql;
   }
 }

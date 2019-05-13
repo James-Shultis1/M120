@@ -25,8 +25,7 @@ $_SESSION["CurPage"] = "index.php";
 
   $where = "autor";
   $search = "%"."apian"."%";
-  $sql = $Hunter->GetSelectSQL($where, $search);
-  echo $sql; ?>
+  $sql = $Hunter->GetSelectSQL($where, $search); ?>
 
     <div class="books">
       <?php $Hunter->SearchDB($sql, $conn); ?>
