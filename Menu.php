@@ -1,4 +1,4 @@
-<?php error_reporting(0) ?>
+
 <nav role="navigation">
     <div id= "menuToggle">
 
