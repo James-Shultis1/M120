@@ -46,6 +46,7 @@
                 <option value="id">ID</option>
 
               </select>
+              <br>
               Order by: <select class="order" name="order">
                 <option value="autor">Author</option>
                 <option value="title">Title</option>
@@ -60,6 +61,7 @@
 
             <a href="index.php"> <li> Hot </li></a> <br>
             <a href="Books.php"> <li>Archive</li> </a>
+            <a href="Users.php"> <li>Users</li> </a>
 
 
     <div id="SocialMedia">

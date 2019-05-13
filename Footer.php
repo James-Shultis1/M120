@@ -1,3 +1,3 @@
 <?php echo '<div class="footer">
-    This is the Footer
+    &copy; James Shultis & Marcelo Guia
   </div>' ?>
