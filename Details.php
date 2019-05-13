@@ -12,8 +12,7 @@ charset=iso-8859-1">
   </head>
   <body>
     <?php include "Header.php";
-    include "Menu.php";
-    include "Footer.php"; ?>
+    include "Menu.php"; ?>
 
   <?php include "GetDetails.php" ?>
 
