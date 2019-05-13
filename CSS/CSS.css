@@ -227,6 +227,7 @@ background-image: "Search.jpg";
    transform: translate(-50%);
    height: fit-content;
    width: 80vw;
+   z-index: -1;
 }
 .Details h1{
   position: absolute;
@@ -245,6 +246,7 @@ background-image: "Search.jpg";
   top: 1vw;
   position:relative;
   height: 40vw;
+
 }
 
 /* ------------------------------------------- Pagination System ----------------------------------------------------------------*/
