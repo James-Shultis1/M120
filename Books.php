@@ -59,6 +59,8 @@ charset=iso-8859-1">
       ?> </div> <?php
       $Pagey->EnlightPages($PageNr, $TotalPages);
 
+      echo $PageNr;
+
             // Connection is no longer needed so we obviously close it.
             $conn->close();
             ?>

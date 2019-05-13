@@ -53,7 +53,7 @@ class Search {
     }
     else
     {
-      $sql = "SELECT * FROM buecher WHERE ".$where." LIKE '".$search."' ORDER BY $order LIMIT $Offset, $ArticlesPerPage;";
+      $sql = "SELECT * FROM buecher WHERE ".$where." LIKE '%".$search."%' ORDER BY $order LIMIT $Offset, $ArticlesPerPage;";
       return $sql;
     }
   }

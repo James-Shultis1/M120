@@ -26,7 +26,15 @@ class Pagination {
 
   public function DoLazyMaths($PageNr, $conn, $ArticlesPerPage, $where, $search)
   {
-    $sql = "SELECT COUNT(*) FROM buecher WHERE $where LIKE '$search'";
+    if ($search == "")
+    {
+      $sql = "SELECT COUNT(*) FROM buecher";
+    }
+    else
+    {
+      $sql = "SELECT COUNT(*) FROM buecher WHERE $where LIKE '%$search%'";
+    }
+
     $result = mysqli_query($conn, $sql);
     $TotalRows = mysqli_fetch_array($result)[0];
     $TotalPages = ceil($TotalRows / $ArticlesPerPage);
