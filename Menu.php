@@ -36,9 +36,23 @@
         -->
 
         <ul id="menu">
-            <a href="#top"> <li>Welcome</li> </a>
+          <div class="Search">
+            <form class="Search" action="Search.php" method="post">
+              <input type="text" name="searchfield" value="" placeholder="Search">
+              <br>
+              <select class="filter" name="filter">
+                <option value="Author">Author</option>
+                <option value="Title">Title</option>
+                <option value="ID">ID</option>
+
+              </select>
+              <br>
+              <input class="Sub" type="submit" name="Submit" value="submit">
+            </div>
+            </form>
+            <a href="Index.php"> <li> Hot </li></a> <br>
             <a href="Books.php"> <li>Archive</li> </a>
-            <a href="Index.php"> <li> Hot</a>
+
             <?php if($_SESSION["admin"] == true && $_SESSION["Logged_In"] == true){
                 echo "<a href="."admin.php"."> <li>Create</li> </a>";
             }
@@ -74,6 +88,8 @@
 
     }
     ?>
+
+    </div>
 
     </div>
 

@@ -190,6 +190,18 @@ so if rotate comes before trnaslate itll rotate, then move in that direction*/
 #menuToggle input:checked ~ ul{
     transform: none;
 }
+#SocialMedia{
+  bottom: 5vh;
+  left: 1vw;
+  overflow: hidden;
+position: fixed;}
+
+.Search input{
+
+}
+.Sub{
+background-image: "Search.jpg";
+}
 
 /* ------------------------------------------- Pagination System ----------------------------------------------------------------*/
 
