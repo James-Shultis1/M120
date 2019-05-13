@@ -62,7 +62,7 @@ session_start();
                 <span><?php echo $row["Title"]?></span>
                 <span><?php echo $row["Title"]?></span>-->
               </div>
-                <?php
+                <?php      // Object oriented conversion
                 $idNum++;
             } ?>
             </div>
