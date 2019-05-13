@@ -1,3 +1,13 @@
+<?php
+if (session_status() == PHP_SESSION_NONE)
+{
+   session_start();
+}
+
+$_SESSION["CurPage"] = "index.php";
+?>
+
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
