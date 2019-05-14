@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 // This part was taken from Marcelo's previous project. It was adapted to fit the requirements
 // of the new exam and we did NOT just copy and paste this code,
 // we copied it, completely analysed it made some changes and we fully understand the code. we
