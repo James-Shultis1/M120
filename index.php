@@ -45,8 +45,11 @@ $_SESSION["CurPage"] = "index.php";
   }
 
   $sql = $Hunter->GetSelectSQL($where, $search, $order); ?>
-
+  <div class=pic>
+  <img src="rsc/Test.gif" alt="">
+  </div>
     <div class="books">
+    
       <?php $Hunter->SearchDB($sql, $conn); ?>
     </div>
 
