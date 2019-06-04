@@ -12,7 +12,7 @@ $_SESSION["CurPage"] = "index.php";
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Hottest Books!</title>
+    <title>Title</title>
     <link rel="stylesheet" href="CSS/CSS.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
   </head>
